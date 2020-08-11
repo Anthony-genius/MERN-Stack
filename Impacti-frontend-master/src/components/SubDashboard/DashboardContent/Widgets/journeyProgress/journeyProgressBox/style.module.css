@@ -1,0 +1,37 @@
+.box {
+  display: flex;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 1px 3px 9px 0 rgba(0, 0, 0, 0.15);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  color: #39474e;
+  flex-grow: 1;
+}
+.graph {
+  display: flex;
+  align-items: center;
+}
+
+.destinationName {
+  color: #39474e;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  flex-grow: 1;
+}
+
+.progressNumber {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.progressPercent {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: normal;
+}

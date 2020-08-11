@@ -1,0 +1,224 @@
+:root {
+  --primaryColor: #ff6d00;
+  --secondaryColor: #00a0b2;
+  --tertiaryColor: #3b3b3b;
+  --defaultTextColor: #212121;
+  --footerAndHeaderHeight: '60px';
+  --contentBackgroundColor: '#fafafa';
+  --grayBlueColor: '#8aa8b0';
+  --lighterGray: '#f5f5f5';
+  --halfTransparentWhite: 'rgba(255, 255, 255, 0.5)';
+}
+
+:global(body) {
+  color: var(--defaultTextColor);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+}
+:global(a) {
+  text-decoration: none;
+}
+:global(a.linkColoured) {
+  text-decoration: none;
+  color: var(--grayBlueColor);
+}
+:global(*) {
+  box-sizing: border-box;
+}
+
+:global(.paper-container-wrapper) {
+  padding-bottom: 20px;
+  padding-top: 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+:global(.paper-container) {
+  align-items: center;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 900px;
+  min-height: 512px;
+  padding: 130px 0;
+  position: relative;
+  text-align: center;
+}
+:global(.paper-container--short) {
+  padding-top: 90px;
+}
+:global(.paper-container--clickable) {
+  cursor: pointer;
+}
+:global(.paper-container__member) {
+  padding-left: 65px;
+  padding-right: 65px;
+  width: 100%;
+}
+:global(.paper-container__header) {
+  border-bottom: 1px solid #eeeeee;
+  top: 0;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  position: absolute;
+  width: 100%;
+}
+:global(.paper-container__header__right) {
+  float: right;
+  padding-right: 20px;
+}
+:global(.paper-container__header__left) {
+  float: left;
+  padding-left: 20px;
+}
+
+:global(.paper-container__text--big) {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.21;
+  padding: 12px;
+}
+:global(.paper-container__text--large) {
+  font-size: 24px;
+  line-height: 1.33;
+  padding: 15px;
+}
+:global(.text-m) {
+  font-size: 16px;
+}
+:global(.paper-container__text--small) {
+  font-size: 14px;
+  line-height: 1.43;
+  max-width: 525px;
+  margin: 0 auto;
+  padding: 12px;
+}
+:global(.paper-container__text--supersmall) {
+  font-size: 12px;
+  max-width: 525px;
+  margin: 0 auto;
+  padding: 12px;
+}
+:global(.paper-container__button) {
+  width: 300px;
+  margin-top: 60px;
+}
+:global(.paper-container__backbutton) {
+  background-color: transparent;
+  border: 0;
+  color: #9c9c9c;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  left: 0;
+  margin: 20px auto 0 auto;
+  padding: 10px 0;
+  position: absolute;
+  right: 0;
+  width: 100px;
+}
+:global(.text-xs) {
+  font-size: 12px;
+}
+
+:global(.paper-container__footer) {
+  bottom: 0;
+  border-top: 1px solid #eeeeee;
+  cursor: default;
+  font-size: 12px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  position: absolute;
+  width: 100%;
+}
+:global(.error-custom) {
+  font-size: 12px;
+  line-height: 12px;
+  color: rgb(244, 67, 54);
+}
+:global(.clear) {
+  clear: both;
+}
+:global(.arrowRightIco) {
+  padding: 0;
+  margin-left: 12px;
+}
+
+:global(.members-helper) {
+  bottom: 30px;
+  color: #9b9b9b;
+  float: left;
+  font-size: 14px;
+  line-height: 1.14;
+  left: -225px;
+  height: 125px;
+  position: relative;
+  text-align: center;
+  transform: rotate(345deg);
+  width: 190px;
+}
+:global(.organization-block) {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 5px;
+}
+:global(.chip-default) {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  float: left;
+}
+
+:global(.material-checkbox) {
+  position: relative;
+  margin: 8px 0;
+}
+:global(.material-checkbox label) {
+  cursor: pointer;
+}
+:global(.material-checkbox label:before) {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+:global(.material-checkbox label:after) {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+:global(.material-checkbox label:before) {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #39474e;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+:global(.material-checkbox input[type='checkbox']) {
+  outline: 0;
+  margin-right: 10px;
+  margin-top: 0;
+}
+:global(.material-checkbox input[type='checkbox']:checked + label:before) {
+  background: var(--primaryColor);
+  border: none;
+}
+:global(.material-checkbox input[type='checkbox']:checked + label:after) {
+  transform: rotate(-45deg);
+  top: 4px;
+  left: 3px;
+  width: 12px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-top-style: none;
+  border-right-style: none;
+}
+@media screen and (max-width: 768px) {
+  :global(.paper-container__text--big) {
+    padding: 12px 0;
+  }
+}

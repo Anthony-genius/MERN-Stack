@@ -1,0 +1,17 @@
+.paperContainer {
+  max-width: 1200px;
+  justify-content: center;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.paper {
+  padding: 30px;
+  margin: 20px;
+  max-width: 1200px;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}

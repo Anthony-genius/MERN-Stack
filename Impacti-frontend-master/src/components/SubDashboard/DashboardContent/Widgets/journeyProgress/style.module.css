@@ -1,0 +1,10 @@
+.boxesContainer {
+  padding-bottom: 20px;
+}
+
+.boxLimitToggler {
+  color: var(--grayBlueColor);
+  display: inline-block;
+  font-size: 12px;
+  font-style: italic;
+}

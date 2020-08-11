@@ -1,0 +1,15 @@
+.skipButton {
+  text-transform: uppercase;
+  min-width: 160px;
+}
+
+.header {
+  font-size: 38px;
+  font-weight: 300;
+  margin: 20px 40px 70px;
+  line-height: 1.2em;
+}
+
+.button {
+  margin: 5px;
+}

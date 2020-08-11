@@ -1,0 +1,103 @@
+{
+  "name": "impacti-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env ENV='dev' nodemon src/index.js --exec babel-node --presets es2015,stage-2",
+    "start:dev": "ENV='dev' nodemon src/index.js --exec babel-node --presets es2015,stage-2 --inspect",
+    "build": "ENV='prod' babel src -d dist",
+    "build:demo": "ENV='demo' babel src -d dist",
+    "build:stage": "ENV='stage' babel src -d dist",
+    "serve": "ENV='prod' node dist/index.js",
+    "serve:demo": "ENV='demo' node dist/index.js",
+    "serve:stage": "ENV='stage' node dist/index.js",
+    "test:unit": "ENV='test' mocha --compilers js:babel-register --recursive test",
+    "test:watch": "ENV='test' npm run test:unit -- --watch",
+    "test:cov": "ENV='test' nyc --reporter=text npm run test:unit",
+    "test": "eslint . && npm run test:cov",
+    "seed": "ENV='dev' node src/fixtures/index.js",
+    "seed:delta:dev": "cross-env ENV='dev' node src/fixtures/seedDelta.js",
+    "seed:delta:prod": "ENV='prod' node src/fixtures/seedDelta.js",
+    "seed:delta:demo": "ENV='demo' node src/fixtures/seedDelta.js",
+    "seed:delta:stage": "ENV='stage' node src/fixtures/seedDelta.js",
+    "seed:focuses:dev": "cross-env ENV='dev' node src/fixtures/seedFocuses.js",
+    "seed:focuses:prod": "ENV='prod' node src/fixtures/seedFocuses.js",
+    "seed:focuses:demo": "ENV='demo' node src/fixtures/seedFocuses.js",
+    "seed:focuses:stage": "ENV='stage' node src/fixtures/seedFocuses.js",
+    "seed:rehash:dev": "cross-env ENV='dev' node src/fixtures/updateHashes.js",
+    "seed:rehash:prod": "cross-env ENV='prod' node src/fixtures/updateHashes.js",
+    "seed:rehash:demo": "cross-env ENV='demo' node src/fixtures/updateHashes.js",
+    "seed:rehash:stage": "cross-env ENV='stage' node src/fixtures/updateHashes.js",
+    "seed:tags:dev": "cross-env ENV='dev' node src/fixtures/seedTags.js",
+    "seed:tags:prod": "ENV='prod' node src/fixtures/seedTags.js",
+    "seed:tags:demo": "ENV='demo' node src/fixtures/seedTags.js",
+    "seed:tags:stage": "ENV='stage' node src/fixtures/seedTags.js",
+    "clear": "ENV=dev node src/fixtures/clear/index.js"
+  },
+  "eslintIgnore": [
+    "dist"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "argon2": "^0.25.0",
+    "body-parser": "^1.17.2",
+    "chai": "^4.1.0",
+    "cors": "2.8.4",
+    "country-data": "0.0.31",
+    "csv": "^1.1.1",
+    "csv-parse": "^4.4.6",
+    "email-templates": "^6.0.2",
+    "email-validator": "^1.1.1",
+    "express": "^4.15.3",
+    "js-sha256": "^0.6.0",
+    "jsonwebtoken": "^7.4.2",
+    "keymirror": "^0.1.1",
+    "md5": "^2.2.1",
+    "mocha": "^3.4.2",
+    "mongoose": "5.7.5",
+    "morgan": "^1.8.2",
+    "node-cron": "^2.0.3",
+    "node-mongoose-fixtures": "^0.2.4",
+    "nodemailer": "^4.0.1",
+    "path": "^0.12.7",
+    "proxyquire": "^1.8.0",
+    "swagger-jsdoc": "^1.9.7",
+    "swagger-tools": "^0.10.1",
+    "uuid": "^3.1.0"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.js"
+    ],
+    "assets": [
+      "node_modules/config/**/*.*"
+    ],
+    "exclude": [
+      "**/node_modules/**",
+      "**/test/**",
+      "**/coverage/**",
+      "**/config/**"
+    ],
+    "all": true
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "nodemon": "^1.11.0",
+    "nyc": "^11.1.0",
+    "sinon": "^4.0.1"
+  }
+}

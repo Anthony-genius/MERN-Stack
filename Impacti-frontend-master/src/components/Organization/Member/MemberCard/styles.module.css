@@ -1,0 +1,69 @@
+.node {
+  margin: 20px;
+  min-height: 60px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  min-width: 300px;
+  padding: 10px;
+  position: relative;
+  width: 80%;
+}
+
+.memberCardElement {
+  position: relative;
+}
+
+.hideChildrenButton {
+  position: absolute;
+  bottom: -10px;
+  cursor: pointer;
+  left: -10px;
+  z-index: 1000;
+}
+
+.showChildrenButton {
+  position: absolute;
+  bottom: -10px;
+  cursor: pointer;
+  left: -10px;
+  transform: rotate(-90deg);
+  z-index: 1000;
+}
+
+.addNewButton {
+  bottom: -10px;
+  cursor: pointer;
+  position: absolute;
+  right: -10px;
+}
+
+.removeButton {
+  cursor: pointer;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+
+@define-mixin memberCardPaper {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 50px;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.07) !important;
+  position: relative;
+  z-index: 100;
+}
+.paper {
+  @add-mixin memberCardPaper;
+}
+
+.paperLowLevel {
+  @add-mixin memberCardPaper;
+  font-size: 16px;
+  padding: 16px 20px;
+  line-height: 16px;
+  text-align: left;
+  font-weight: 400;
+}

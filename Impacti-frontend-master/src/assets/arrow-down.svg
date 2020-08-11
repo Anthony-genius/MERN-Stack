@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="7px" viewBox="0 0 13 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>carret</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header-logged-in-B" transform="translate(-1336.000000, -30.000000)" stroke="#FFFFFF" fill="#FFFFFF">
+            <path d="M1342.31253,36 C1342.2055,36 1342.09839,35.9634375 1342.01136,35.8903905 L1337.16761,31.8278871 C1336.96917,31.6615588 1336.94323,31.3658554 1337.10964,31.167574 C1337.27597,30.9691363 1337.57167,30.9432769 1337.76995,31.1096052 L1342.31253,34.9194522 L1346.85511,31.1096052 C1347.05332,30.9432769 1347.34902,30.9691363 1347.51543,31.167574 C1347.68183,31.3658554 1347.6559,31.6615588 1347.45746,31.8278871 L1342.6137,35.8903905 C1342.52667,35.9634375 1342.41956,36 1342.31253,36" id="carret"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,279 @@
+.paperContainer {
+  padding: 10px 0 95px;
+  max-width: 95%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 512px;
+  position: relative;
+  text-align: center;
+}
+
+section {
+  text-align: left;
+  margin: 0 15%;
+}
+
+section.introText {
+  margin: 5% 15%;
+  text-align: center;
+}
+
+section h3 {
+  position: relative;
+}
+
+section h3 span {
+  border: 1px #000 solid;
+  border-radius: 60%;
+  padding: 0 0.5em;
+  position: absolute;
+  top: -4px;
+}
+
+section.cardContainer {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sectorsList {
+  float: left;
+  height: 540px;
+  margin-right: 20px;
+  overflow: auto;
+  padding: 5px 0 5px 0;
+  text-align: left;
+  width: 300px;
+}
+
+.sectorsListHeader {
+  float: left;
+  font-size: 14px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  text-align: left;
+  width: 300px;
+}
+
+.sectorsList__sector {
+  padding-left: 15px;
+}
+
+.sectorsList label {
+  max-width: 244px;
+  width: 100%;
+}
+
+.industriesCounter {
+  background-color: var(--primaryColor);
+  border-radius: 50%;
+  color: #ffffff;
+  float: right;
+  font-size: 11px;
+  font-weight: 900;
+  height: 18px;
+  line-height: 20px;
+  margin: 15px 5px 15px 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 18px;
+}
+
+.industriesList {
+  height: 540px;
+  overflow: auto;
+  padding: 20px 10px;
+  text-align: left;
+  border: 1px solid #eeeeee;
+}
+
+.industriesList__name {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--grayBlueColor);
+  padding: 0 10px 15px 10px;
+}
+
+.industriesListHeader {
+  font-size: 14px;
+  overflow: auto;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.colorLabel {
+  color: var(--primaryColor);
+}
+
+.sectorArrow {
+  width: 0;
+  position: absolute;
+  height: 0;
+  left: 371px;
+}
+
+.sectorArrow::before {
+  width: 0;
+  position: absolute;
+  height: 0;
+  content: '';
+  top: 10px;
+  border-right: 15px solid #eeeeee;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+.sectorArrow::after {
+  width: 0;
+  position: absolute;
+  left: 2px;
+  top: 11px;
+  height: 0;
+  content: '';
+  border-right: 14px solid #ffffff;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+}
+
+.standaloneContainer {
+  width: 100% !important;
+  box-shadow: none !important;
+  padding-top: 50px !important;
+}
+
+.root {
+  min-height: 360px;
+  width: 30vw;
+}
+
+.materialityButton {
+  text-align: center;
+}
+
+.editButton:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.bottomSdgs .closeIcon {
+  display: none;
+}
+
+.topSdgs .cardTypo .closeIcon {
+  float: right;
+}
+
+.topSdgs .closeIcon:hover {
+  cursor: pointer;
+}
+
+.bottomSdgs .chipList {
+  display: inline-block;
+}
+
+.topSdgs .addChip {
+  display: none;
+}
+
+.bottomSdgs .addChip {
+  float: right;
+}
+
+.bottomSdgs .addChip {
+  cursor: pointer;
+}
+
+.moreOrLess:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.moreOrLess svg {
+  vertical-align: bottom;
+}
+
+.visible {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.paper {
+  padding: 20px;
+  width: 14vw;
+  position: fixed;
+}
+
+.selectedCountries {
+  display: flex;
+  flex-direction: row;
+  max-width: 28vw;
+  flex-wrap: wrap;
+  margin: 3px;
+}
+
+/* POPOVERS */
+
+.question {
+  left: 140px;
+}
+
+.questionMore {
+  left: 105px;
+}
+
+.questionReco {
+  left: 225px;
+}
+
+.questionMetho {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+}
+@media screen and (max-width: 1024px) {
+  .paperContainer {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .paper {
+    width: 70vw;
+  }
+
+  .countriesList {
+    float: none;
+    width: 62vw;
+  }
+
+  .sectorsList,
+  .industriesList {
+    height: 240px;
+  }
+
+  .industriesList > div {
+    font-size: 14px !important;
+    margin: 5px !important;
+    padding: 0px !important;
+    height: 40px !important;
+    max-width: 96%;
+  }
+}

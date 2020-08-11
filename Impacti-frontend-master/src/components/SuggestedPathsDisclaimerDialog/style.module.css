@@ -1,0 +1,15 @@
+.content {
+  display: inline-block;
+  margin: 40px 10px;
+  height: 160px;
+  max-width: 728px;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  clear: both;
+  font-weight: 300;
+}
+
+.image {
+  display: inline-block;
+}

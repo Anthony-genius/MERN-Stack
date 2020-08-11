@@ -1,0 +1,29 @@
+import keyMirror from 'key-mirror'
+
+const SESSION = keyMirror({
+  GET_AUTH: null,
+  GET_AUTH_SUCCESS: null,
+  GET_AUTH_FAILURE: null,
+  LOGIN: null,
+  LOGOUT: null,
+  ON_LOGIN_SUCCESS: null,
+  ON_LOGIN_FAILURE: null,
+  SIGN_UP: null,
+  ON_SIGN_UP_SUCCESS: null,
+  ON_SIGN_UP_FAILURE: null,
+  UPDATE_USER: null,
+  ON_UPDATE_USER_SUCCESS: null,
+  ON_UPDATE_USER_FAILURE: null,
+  RESET_PASSWORD: null,
+  ON_RESET_PASSWORD_SUCCESS: null,
+  ON_RESET_PASSWORD_FAILURE: null,
+  UPDATE_PASSWORD: null,
+  ON_UPDATE_PASSWORD_SUCCESS: null,
+  ON_UPDATE_PASSWORD_FAILURE: null,
+  REMEMBER_URI: null,
+  ON_REMEMBER_URI_SUCCESS: null,
+  ON_REMEMBER_URI_FAILURE: null,
+  UPDATE_LASTLY_SAVED_URI: null
+})
+
+export default SESSION

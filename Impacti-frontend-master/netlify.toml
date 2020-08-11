@@ -1,0 +1,21 @@
+[Settings]
+
+ID = "Impacti"
+
+[build]
+  command = "yarn build"
+  publish = "build"
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+[context.branch-deploy.environment]
+  NODE_ENV = "staging"
+
+[context.deploy-preview.environment]
+  NODE_ENV = "staging"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

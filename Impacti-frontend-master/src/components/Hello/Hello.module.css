@@ -1,0 +1,4 @@
+:local(.welcomeMessage) {
+  max-width: 610px;
+  padding-bottom: 60px;
+}

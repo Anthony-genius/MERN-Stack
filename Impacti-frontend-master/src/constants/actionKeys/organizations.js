@@ -1,0 +1,16 @@
+import keyMirror from 'key-mirror'
+
+const ORGANIZATIONS = keyMirror({
+  SUBMIT_MEMBER: null,
+  ON_MEMBER_FETCH_SUCCESS: null,
+  ON_MEMBER_FETCH_FAILURE: null,
+  REMOVE_MEMBER: null,
+  ON_MEMBER_REMOVE_SUCCESS: null,
+  ON_MEMBER_REMOVE_FAILURE: null,
+  REMOVE_EDITED_NODE: null,
+  TOGGLE_EDIT_MEMBER_NODE: null,
+  TOGGLE_CHILDREN_VISIBILITY: null,
+  ADD_EMPTY_MEMBER: null
+})
+
+export default ORGANIZATIONS

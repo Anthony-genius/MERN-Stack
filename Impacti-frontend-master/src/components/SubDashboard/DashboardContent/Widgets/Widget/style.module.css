@@ -1,0 +1,58 @@
+.componentContainer {
+  padding: 30px;
+  display: inline-block;
+  width: 100%;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 2px solid;
+  border-color: $lighterGray;
+  height: 100%;
+}
+
+.widgetTop {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.title {
+  flex: 1;
+}
+
+.mainTitle {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.subTitle {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.icon {
+  align-self: center;
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.emptyContent {
+  margin: auto;
+  font-size: 12px;
+  color: var(--grayBlueColor);
+  text-align: center;
+  padding: 60px 18%;
+  font-style: italic;
+  line-height: 16px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: $lighterGray;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: $breakpointMD) {
+  .content {
+    padding: 40px 0;
+  }
+}

@@ -1,0 +1,9 @@
+:local(.membersDesc) {
+  max-width: 495px;
+}
+:local(.membersLearn) {
+  color: var(--primaryColor);
+  display: block;
+  margin: 12px 0 50px 0;
+  text-decoration: underline;
+}

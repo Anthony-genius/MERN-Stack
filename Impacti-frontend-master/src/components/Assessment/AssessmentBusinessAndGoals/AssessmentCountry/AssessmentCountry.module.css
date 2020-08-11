@@ -1,0 +1,48 @@
+.paperContainerWrapper {
+  padding: 10px 0;
+}
+.paperContainer {
+  padding: 10px 0;
+  max-width: 1200px;
+  align-items: center;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 512px;
+  position: relative;
+  text-align: center;
+}
+
+:local(.introMessage) {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+:local(.introMessage) h1 {
+  padding: 0;
+  margin: 5px 0;
+}
+
+:local(.introMessage) p {
+  margin: 0 auto 30px;
+  padding: 0;
+}
+
+:local(.introMessage) img {
+  height: 16vh;
+}
+
+:local(.countries) .paper-container__header {
+  display: none !important;
+}
+
+:local(.countries) .paper-container--short {
+  max-height: 20vh;
+}
+@media screen and (max-width: 768px) {
+  :local(.introMessage) {
+    padding: 0 24px;
+  }
+}

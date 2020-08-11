@@ -1,0 +1,4 @@
+.errorBox {
+  font-weight: bold;
+  color: darkred; // todo: css constant
+}

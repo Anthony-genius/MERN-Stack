@@ -1,0 +1,14 @@
+node_modules
+.history
+.idea
+dist
+npm-debug.log*
+.nyc_output
+coverage
+config.dev.js
+config.test.js
+config.stage.js
+config.prod.js
+config.demo.js
+.vscode
+.vs

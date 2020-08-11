@@ -1,0 +1,118 @@
+h3 {
+  margin-block-start: 0;
+  display: inline-block;
+}
+
+.sideCards {
+  margin: 2em 10px;
+  padding: 0;
+  position: relative;
+  width: 240px;
+  height: 345px;
+  background: #e1e1e1 !important;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.sideCards p {
+  margin: 0 auto;
+}
+
+.sideCards button {
+  height: 100%;
+}
+
+.sideCards p:first-child {
+  color: var(--secondaryColor);
+  font-weight: 500;
+}
+
+.content {
+  position: relative;
+}
+
+.methodology .left {
+  display: flex;
+  align-items: center;
+}
+
+.methodology .left p {
+  text-align: left;
+  font-size: 1.1em;
+  margin-left: 5px;
+}
+
+.methodology .left svg {
+  vertical-align: bottom;
+  color: var(--primaryColor);
+}
+
+.methodology p {
+  margin: 10px auto;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 15px;
+}
+
+.methodology .link {
+  display: inline;
+}
+
+.link a {
+  margin: 0;
+  display: inline;
+  color: var(--primaryColor);
+  text-decoration: underline;
+}
+
+.methodology .linkText {
+  display: inline;
+}
+
+.moreOrLess:hover {
+  cursor: pointer;
+}
+
+.moreOrLess svg,
+.getStarted svg {
+  vertical-align: bottom;
+  font-size: 7em;
+  height: 100px;
+  margin: 30% auto;
+  width: 90%;
+  fill: var(--primaryColor);
+}
+
+.moreOrLess svg:hover {
+  fill: #ff6d007d;
+}
+
+@media screen and (max-width: 1280px) {
+  .sideCards {
+    width: 222px;
+    height: 375px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sideCards {
+    margin: 2em 4px;
+    width: 195px;
+    height: 345px;
+  }
+  .methodology .left p {
+    font-size: 11px;
+  }
+
+  .methodology p {
+    margin: 5px auto;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sideCards {
+    width: 230px;
+    height: 345px;
+  }
+}

@@ -1,0 +1,50 @@
+.consentBanner {
+  align-items: baseline;
+  background: #00a0b2;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+h2 {
+  margin-top: 50px;
+}
+.bannerContent {
+  flex: 1 0 300px;
+  margin: 15px;
+}
+button.bannerButton {
+  background-color: #fff;
+  color: #ff7400;
+  margin: 0 15px;
+}
+.modalBody {
+  height: 80vh;
+  scroll-behavior: smooth;
+  overflow: scroll;
+  padding: 0 10%;
+}
+
+.closeIcon {
+  float: right;
+  margin: 1em;
+}
+
+.buttonSlick {
+  border-style: none;
+  padding: 0 0 0;
+  margin: 1em 0;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.buttonCentered {
+  margin: 50px auto;
+  width: 125px;
+}

@@ -1,0 +1,9 @@
+:local(.countriesList) {
+  background-color: #fafafa;
+  float: left;
+  height: 475px;
+  overflow: auto;
+  padding: 20px;
+  text-align: left;
+  width: 300px;
+}

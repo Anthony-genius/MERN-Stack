@@ -1,0 +1,96 @@
+@define-mixin nav-arrow-down $height, $color {
+  margin-left: -$height;
+  border-top: solid $height;
+  border-left: solid $height transparent;
+  border-right: solid $height transparent;
+  border-top-color: $color;
+}
+
+.sidebarToggler {
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  color: #39474e;
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 900;
+  height: 63px;
+  padding-left: 30px;
+  text-align: left;
+  min-width: 200px;
+  width: 200px;
+}
+
+.sidebarTogglerContent {
+  position: relative;
+}
+
+.arrow {
+  left: -25px;
+  position: absolute;
+  top: -5px;
+}
+
+.contextBar {
+  display: flex;
+  background: #ffffff;
+  box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.13);
+}
+
+.pathsList {
+  display: flex;
+  align-items: center;
+}
+
+.pathIcon {
+  width: 41px;
+  height: 100%;
+  display: flex;
+  margin: 0 20px;
+  align-items: center;
+}
+
+.pathIconActive {
+  height: 100%;
+  min-width: 230px;
+  max-width: 270px;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  padding: 0 15px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    @add-mixin nav-arrow-down 10px, inherit;
+  }
+}
+
+.pathIconImage {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+}
+
+.pathName {
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 10px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+.addPathWrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  margin: 0 20px 0 10px;
+  align-items: center;
+}

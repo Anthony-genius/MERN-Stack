@@ -1,0 +1,24 @@
+.contentBox {
+  padding: 32px;
+}
+
+.header {
+  margin-top: 60px;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.textContainer {
+  text-align: center;
+}
+
+.pathsContainer {
+  border: 1px solid transparent;
+  max-width: 1177px;
+  padding: 40px 0;
+}
+
+.saveButtonContainer {
+  margin: 20px 0;
+  text-align: right;
+}

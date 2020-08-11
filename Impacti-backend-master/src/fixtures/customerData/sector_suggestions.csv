@@ -1,0 +1,80 @@
+Sector,Industry,Environmentally sustainable operations,Emissions (air quality),Energy,Water,Waste,Biodiversity
+Health Care,Biotechnology,Yes,,x,x,x,
+Health Care,Pharmaceuticals,Yes,,x,x,x,
+Health Care,Medical Equipment and Supplies,Yes,,x,x,x,
+Health Care,Health Care Delivery,Yes,,x,,x,
+Health Care,Health Care Distribution,Yes,,x,,,
+Health Care,Managed Care,No,,,,,
+Financials,Commercial Banks,No,,,,,
+Financials,Investment Banking and Brokerage,No,,,,,
+Financials,Asset Management and Custody Activities,No,,,,,
+Financials,Consumer Finance,No,,,,,
+Financials,Mortgage Finance,No,,,,,
+Financials,Security and Commodity Exchanges,No,,,,,
+Financials,Insurance,No,,,,,
+Technology and Communications,Electronic Manufacturing Services and ODM,Yes,,,x,x,
+Technology and Communications,Software and IT Services,Yes,,x,x,,
+Technology and Communications,Hardware,No,,,,,
+Technology and Communications,Semiconductors,Yes,x,x,x,x,
+Technology and Communications,Telecommunications,Yes,,x,,,
+Technology and Communications,Internet Media and Services,Yes,,x,x,,
+Non-renewable Resources,Oil and Gas – Exploration and Production,Yes,x,,x,,x
+Non-renewable Resources,Oil and Gas – Midstream,Yes,x,,,,x
+Non-renewable Resources,Oil and Gas – Refining and Marketing,Yes,x,,x,x,
+Non-renewable Resources,Oil and Gas - Services,Yes,,x,x,x,
+Non-renewable Resources,Coal Operations,Yes,x,,x,x,x
+Non-renewable Resources,Iron and Steel Producers,Yes,x,x,x,x,
+Non-renewable Resources,Metals and Mining,Yes,x,x,x,x,x
+Non-renewable Resources,Construction Materials,Yes,x,x,x,x,x
+Transportation,Automobiles,Yes,,,,x,
+Transportation,Auto Parts,Yes,,x,,x,
+Transportation,Car Rentals & Leasing,No,,,,,
+Transportation,Airlines,Yes,x,x,,,
+Transportation,Air Freight & Logistics,Yes,x,x,,,
+Transportation,Marine Transportation,Yes,x,x,,x,x
+Transportation,Rail Transportation,Yes,x,x,,,
+Transportation,Road Transportation,Yes,x,x,,,
+Services,Education,No,,,,,
+Services,Professional Services,No,,,,,
+Services,Hotels & Lodging,Yes,,x,x,,x
+Services,Casinos & Gaming,Yes,,x,,,
+Services,Restaurants,Yes,,x,x,x,
+Services,Leisure Facilities,Yes,,x,,,
+Services,Cruise lines,Yes,x,x,,x,x
+Services,Advertising & Marketing,No,,,,,
+Services,Media Production & Distribution,No,,,,,
+Services,Cable & Satellite,Yes,,x,,,
+Resource Transformation,Chemicals,Yes,x,x,x,x,
+Resource Transformation,Aerospace and Defense,Yes,,x,,x,
+Resource Transformation,Electrical and Electronic Equipment,Yes,,x,,x,
+Resource Transformation,Industrial Machinery and Goods,Yes,,x,,,
+Resource Transformation,Containers and Packaging,Yes,x,x,x,x,
+Consumption,Agricultural Products,Yes,x,x,x,,x
+Consumption,"Meat, Poultry and Dairy",Yes,x,x,x,x,x
+Consumption,Processed Foods,yes,,x,x,,
+Consumption,Non-Alcoholic Beverages,Yes,,x,x,,
+Consumption,Alcoholic Beverages,Yes,,x,x,,
+Consumption,Tobacco,No,,,,,
+Consumption,Household and Personal Products,Yes,,,x,,
+Consumption,Food Retailers and Distributors,Yes,x,x,,x,
+Consumption,Drug Retailers and Convenience Stores,Yes,,x,,,
+Consumption,Multiline and Speciality Retailers and Distributors,Yes,,x,,,
+Consumption,E-commerce,Yes,,x,x,,
+Consumption,Apparal asseccories and footwear,No,,,,,
+Consumption,Appliance manufacturing,No,,,,,
+Consumption,Building products and Furnishings,Yes,,x,,,
+Consumption,Toys and Sporting goods,No,,,,,
+Renewable Resources and Alternative Energy,Biofuels,Yes,x,,x,,
+Renewable Resources and Alternative Energy,Solar Energy,Yes,,x,x,x,x
+Renewable Resources and Alternative Energy,Wind Energy,Yes,,,,,x
+Renewable Resources and Alternative Energy,Fuel Cells and Industrial Batteries,Yes,,x,,,
+Renewable Resources and Alternative Energy,Forestry and Logging,Yes,,,,,x
+Renewable Resources and Alternative Energy,Pulp and Paper Products,Yes,x,x,x,,
+Infrastructure,Electric utilities,Yes,x,,x,x,
+Infrastructure,Gas Utilities,No,,,,,
+Infrastructure,Water Utilities,Yes,,x,x,,
+Infrastructure,Waste management,Yes,x,x,,x,
+Infrastructure,Engineering and Construction Services,Yes,,,,,x
+Infrastructure,Home Buildings,yes,,,x,,x
+Infrastructure,"Real Estate Owners, Developers and Investment Trusts",Yes,,x,x,,
+Infrastructure,Real Estate Services,No,,,,,

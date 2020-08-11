@@ -1,0 +1,161 @@
+$text-color: #fafafa;
+$highlighted-color: #ffffff;
+$background-color: #39474e;
+$border-width: 1px;
+$sidebar-width: 200px;
+
+@define-mixin action-container-child {
+  flex-grow: 1;
+  flex-wrap: nowrap;
+}
+
+@define-mixin sidebar-link-colors {
+  &,
+  &:visited {
+    color: $highlighted-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $text-color;
+  }
+}
+
+@define-mixin size $value {
+  width: $value;
+  height: $value;
+}
+
+.sidebar {
+  background: $background-color;
+  color: white;
+  height: 100%;
+  min-height: calc(100vh - 183px);
+  width: $sidebar-width;
+  min-width: $sidebar-width;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.treeUl {
+  padding-left: 10px;
+  list-style: none;
+}
+
+@define-mixin vertical-connector $height {
+  content: '';
+  height: $height;
+  position: absolute;
+  top: -11px;
+  left: -6px;
+  z-index: 0;
+  border-left: $border-width solid $text-color;
+  padding: 1px;
+}
+
+@define-mixin top-right-rectangle-edges-connector $height {
+  content: '';
+  top: 25px;
+  left: -5px;
+  width: 10px;
+  height: $height;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  border-color: $text-color;
+  position: absolute;
+  z-index: 0;
+}
+
+.treeLi {
+  padding-top: 7px;
+  position: relative;
+  &:not(:last-child):before {
+    @add-mixin vertical-connector calc(100% - 0px);
+  }
+
+  &:not(:last-child):after {
+    @add-mixin top-right-rectangle-edges-connector 100%;
+    border-width: 1px 0 0 0;
+  }
+
+  &:last-child:not(.hasChildrenVisible):after {
+    @add-mixin top-right-rectangle-edges-connector 100%;
+    border-width: 1px 0 0 0;
+  }
+
+  &:last-child:before {
+    @add-mixin vertical-connector 35px;
+  }
+
+  &.hasChildrenVisible:after {
+    @add-mixin top-right-rectangle-edges-connector 100%;
+    max-height: 50%;
+    border-width: 1px 0 0 0;
+  }
+}
+
+.sidebar > .treeUl > .treeLi {
+  &:before,
+  &:after {
+    content: '';
+    display: none !important;
+  }
+}
+
+.listElementActionContainer {
+  position: relative;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  clear: both;
+  padding-right: 10px;
+}
+
+.childrenVisibilityToggler {
+  @add-mixin size 19px;
+  @add-mixin action-container-child;
+  flex-grow: 0;
+  z-index: 2;
+
+  .icon {
+    margin-top: 12px;
+    @add-mixin size 12px;
+    border-radius: 50%;
+    border: $border-width solid $text-color;
+    color: $text-color;
+    z-index: 10;
+    display: block;
+    background-color: $background-color;
+    text-align: center;
+    line-height: 10px;
+    font-size: 10px;
+  }
+}
+
+.memberSelector {
+  margin-left: 3px;
+  padding-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @add-mixin action-container-child;
+  @add-mixin sidebar-link-colors;
+}
+
+.treeLi > a {
+  position: relative;
+}
+
+.sidebarBottomLink {
+  @add-mixin sidebar-link-colors;
+}
+
+.treeLiSelected > .listElementActionContainer:before {
+  content: '';
+  background-color: rgba(216, 216, 216, 0.3) !important;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: -200px;
+  width: 400px;
+}

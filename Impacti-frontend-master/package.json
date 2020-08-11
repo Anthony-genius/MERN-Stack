@@ -1,0 +1,70 @@
+{
+  "name": "impacti-frontend2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.3.3",
+    "@material-ui/icons": "^4.2.1",
+    "@react-pdf/renderer": "^1.6.7",
+    "classnames": "^2.2.6",
+    "connected-react-router": "^4.5.0",
+    "downshift": "^3.2.10",
+    "eslint-plugin-prettier": "^3.1.0",
+    "history": "^4.7.2",
+    "html2canvas": "^1.0.0-alpha.12",
+    "husky": "^1.1.2",
+    "jimp": "^0.8.1",
+    "js-cookie": "^2.2.0",
+    "jspdf": "^1.4.1",
+    "key-mirror": "^1.0.1",
+    "moment": "^2.24.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^4.1.0",
+    "postcss-safe-parser": "^4.0.1",
+    "postcss-simple-vars": "^5.0.1",
+    "prettier": "^1.17.1",
+    "pretty-quick": "^1.8.0",
+    "react": "^16.9.0",
+    "react-app-rewire-hot-loader": "^2.0.1",
+    "react-app-rewire-postcss": "^3.0.2",
+    "react-app-rewired": "^2.1.1",
+    "react-dom": "^16.9.0",
+    "react-dropzone": "^9.0.0",
+    "react-hot-loader": "^4.12.12",
+    "react-linkify": "^1.0.0-alpha",
+    "react-redux": "^5.1.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^3.0.1",
+    "react-sizeme": "^2.6.7",
+    "react-slick": "^0.23.2",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "start": "cross-env NODE_PATH=src react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@hot-loader/react-dom": "^16.9.0",
+    "cross-env": "^5.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

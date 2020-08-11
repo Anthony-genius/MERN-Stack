@@ -1,0 +1,7 @@
+.capitalizeTitle {
+  text-transform: capitalize;
+}
+
+.bodyContainer {
+  padding: 50px 10%;
+}

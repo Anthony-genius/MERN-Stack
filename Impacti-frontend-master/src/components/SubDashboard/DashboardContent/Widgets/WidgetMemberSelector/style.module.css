@@ -1,0 +1,10 @@
+.select {
+  padding-left: 20px;
+  align-self: start;
+  &::before {
+    content: '';
+    left: -20px;
+    position: relative;
+    border-left: 1px solid var(--defaultTextColor);
+  }
+}

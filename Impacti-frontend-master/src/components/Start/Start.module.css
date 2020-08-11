@@ -1,0 +1,35 @@
+.startContainer {
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 0;
+  min-height: calc(100vh - 2 * var(--footerAndHeaderHeight));
+}
+
+.innerWrapper {
+  flex: 1;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+.startImage {
+  margin: 90px auto 0 auto;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.leadershipStrip {
+  background-color: #7e9ea7;
+  color: #ffffff;
+  font-size: 30px;
+  margin-top: 80px;
+  padding: 85px 0;
+}
+.leadershipStrip__img {
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+.signUpButton {
+  margin: 50px 20px 20px 20px;
+  width: 300px;
+}
